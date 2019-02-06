@@ -1,0 +1,10 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_no_elevation_toolbar" />
+
+    <include layout="@layout/controller_add_repeating_quest_summary" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/unscheduledEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/unscheduledEventsDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:visibility="gone"
+        android:background="?attr/colorPrimary" />
+
+    <io.ipoli.android.common.view.widget.LockableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/eventContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </io.ipoli.android.common.view.widget.LockableScrollView>
+</LinearLayout>

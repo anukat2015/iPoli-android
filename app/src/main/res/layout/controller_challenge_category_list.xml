@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootCoordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground">
+
+    <include layout="@layout/view_default_toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/health"
+                layout="@layout/view_challenge_health" />
+
+            <include
+                android:id="@+id/fitness"
+                layout="@layout/view_challenge_fitness" />
+
+            <include
+                android:id="@+id/learning"
+                layout="@layout/view_challenge_learning" />
+
+            <include
+                android:id="@+id/organizeLife"
+                layout="@layout/view_challenge_organize" />
+
+            <include
+                android:id="@+id/adventure"
+                layout="@layout/view_challenge_adventure" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CategoryView">
+        <attr name="category_gap" format="dimension" />
+        <attr name="categoryName_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="IconButton">
+        <attr name="iconPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AddSubQuestView">
+        <attr name="showIcon" format="boolean" />
+        <attr name="closeIcon" format="reference" />
+        <attr name="editTextLayout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FabMenuView">
+        <attr name="onlyQuests" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CalendarDayView">
+        <attr name="dragImage" format="reference" />
+        <attr name="dragImageSize" format="dimension" />
+        <attr name="dragImagePadding" format="dimension" />
+        <attr name="visibleHours" format="integer" />
+        <attr name="timeLineLayout" format="reference" />
+    </declare-styleable>
+    <attr name="colorPrimaryLight" format="color" />
+    <attr name="colorSurface" format="color" />
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="line_count" format="integer"/>
+        <attr name="line_width" format="dimension|reference"/>
+        <attr name="background_color" format="color|reference"/>
+        <attr name="progress_start_color" format="color|reference"/>
+        <attr name="progress_end_color" format="color|reference"/>
+        <attr name="progress_text_color" format="color|reference"/>
+        <attr name="progress_text_size" format="dimension|reference"/>
+        <attr name="progress_stroke_width" format="dimension|reference"/>
+        <attr name="progress_background_color" format="color|reference"/>
+
+        <attr name="style">
+            <enum name="line" value="0"/>
+            <enum name="solid" value="1"/>
+            <enum name="solid_line" value="2"/>
+        </attr>
+
+        <attr name="progress_shader">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+            <enum name="sweep" value="2"/>
+        </attr>
+
+        <attr name="progress_stroke_cap">
+            <enum name="butt" value="0"/>
+            <enum name="round" value="1"/>
+            <enum name="square" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WheelItemPickerView">
+        <attr name="visibleItemCount" format="integer"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="activeTextSize" format="dimension"/>
+        <attr name="itemHeight" format="dimension"/>
+        <attr name="itemGravity" format="enum">
+            <enum name="top" value="1"/>
+            <enum name="center" value="0"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

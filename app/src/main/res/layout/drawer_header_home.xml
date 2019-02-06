@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/playerAvatar"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/white_circular_background"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/drawerPlayerTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        tools:src="@drawable/avatar_07" />
+
+    <TextView
+        android:id="@+id/drawerPlayerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/md_white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/drawerPlayerGems"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Level 25: Adept" />
+
+
+    <TextView
+        android:id="@+id/drawerPlayerGems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/ic_gem_24dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/md_white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/signIn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/drawerPlayerCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/ic_life_coin_24dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/md_white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/drawerPlayerGems"
+        app:layout_constraintStart_toEndOf="@id/drawerPlayerGems"
+        app:layout_constraintTop_toTopOf="@+id/drawerPlayerGems" />
+
+    <TextView
+        android:id="@+id/drawerCurrentExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/ic_star_yellow_24dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/md_white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/drawerPlayerGems"
+        app:layout_constraintStart_toEndOf="@id/drawerPlayerCoins"
+        app:layout_constraintTop_toTopOf="@+id/drawerPlayerGems" />
+
+    <ImageView
+        android:id="@+id/petHeadImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_circular_background"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/playerAvatar" />
+
+    <ImageView
+        android:id="@+id/petMood"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/ic_context_indicator"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/petHeadImage"
+        app:layout_constraintEnd_toEndOf="@id/petHeadImage" />
+
+    <ImageView
+        android:id="@+id/achievements"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_circular_background"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/petHeadImage"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/playerAvatar"
+        app:layout_constraintTop_toTopOf="@+id/petHeadImage"
+        tools:src="@drawable/drawer_achievement_trophy" />
+
+    <Button
+        android:id="@+id/signIn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/sign_in_button"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

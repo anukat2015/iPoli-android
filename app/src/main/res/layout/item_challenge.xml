@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="?colorSurface"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="74dp"
+        android:background="?android:listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cIcon" />
+
+    <TextView
+        android:id="@+id/cName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/cNext"
+        app:layout_constraintEnd_toStartOf="@+id/cTagName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cProgress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/cTagName"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/tag_indicator"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="?android:textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/cName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cName"
+        app:layout_constraintWidth_max="88dp"
+        tools:text="texty " />
+
+    <ImageView
+        android:id="@+id/cIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/oval_background"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/cNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cName" />
+
+    <ProgressBar
+        android:id="@+id/cProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/item_challenge_progress_background"
+        android:clickable="false"
+        android:progressDrawable="@drawable/item_challenge_progress"
+        app:layout_constraintBottom_toBottomOf="@+id/cIcon"
+        app:layout_constraintEnd_toEndOf="@+id/cIcon"
+        app:layout_constraintStart_toStartOf="@+id/cIcon"
+        app:layout_constraintTop_toTopOf="@+id/cIcon" />
+
+    <TextView
+        android:id="@+id/cNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="?android:textColorSecondary"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/cEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cName"
+        app:layout_constraintTop_toBottomOf="@+id/cName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Next: Today" />
+
+    <TextView
+        android:id="@+id/cEnd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="?android:textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/cNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cNext"
+        tools:text="Ends in 2 days" />
+
+</android.support.constraint.ConstraintLayout>
